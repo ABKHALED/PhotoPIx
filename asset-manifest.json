@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/PhotoPIx/static/css/main.3c701072.css",
-    "main.js": "/PhotoPIx/static/js/main.61e46be9.js",
+    "main.js": "/PhotoPIx/static/js/main.369a2e2d.js",
     "static/media/Pexels Videos 2795400.mp4": "/PhotoPIx/static/media/Pexels Videos 2795400.f87b277b2265276b517c.mp4",
     "static/media/about.jpg": "/PhotoPIx/static/media/about.f2daa58dc00eedb4a576.jpg",
     "static/media/diaphragm (1).png": "/PhotoPIx/static/media/diaphragm (1).4be38393ae31916e3fd5.png",
     "index.html": "/PhotoPIx/index.html",
     "main.3c701072.css.map": "/PhotoPIx/static/css/main.3c701072.css.map",
-    "main.61e46be9.js.map": "/PhotoPIx/static/js/main.61e46be9.js.map"
+    "main.369a2e2d.js.map": "/PhotoPIx/static/js/main.369a2e2d.js.map"
   },
   "entrypoints": [
     "static/css/main.3c701072.css",
-    "static/js/main.61e46be9.js"
+    "static/js/main.369a2e2d.js"
   ]
 }
