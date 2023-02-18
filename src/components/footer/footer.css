@@ -1,0 +1,31 @@
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+ ul li{
+    padding: 0;
+    margin-bottom: 10px;
+ }
+ ul li a{
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+    font-size: 17px;
+ }
+ ul li a:hover{
+    color: var(--prym-color);
+ }
+ .mid ul li a{
+    font-weight: bold;
+ }
+ .left p{
+    text-align: start;
+    line-height: 1.7;
+ }
+
+ .dd{
+    flex-wrap: wrap !important;
+    text-align: center;
+ }

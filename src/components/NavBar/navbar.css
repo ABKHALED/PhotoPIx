@@ -1,0 +1,133 @@
+nav{
+    height: 60px;
+    background-color: var(--prym-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+nav .logo span{
+    color: var(--section-color);
+    margin-left: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    transition: .5s ease-in-out;
+}
+nav .logo:hover span{
+    color: var(--sec-color);
+}
+nav .logo a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+nav .logo img{
+    width: 25px;
+    height: 25px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+} 
+nav ul li{
+    position: relative;
+    margin-bottom: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--section-color);
+    transition: .5s ease-in-out;
+    font-size: 17px;
+    font-weight: 500;
+}
+nav ul li a.active{
+    color: var(--sec-color);
+}
+nav ul li:hover a{
+    color: var(--sec-color);
+}
+nav ul li::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--sec-color);
+    transition:all .5s ease-in-out;
+}
+nav ul li:hover::before{
+    width: 100%;
+}
+nav .open{
+    cursor: pointer;
+}
+nav .open svg{
+    font-size: 30px !important;
+    color: var(--section-color);
+    transition: all .5s ease-out;
+}
+nav .open:hover svg{
+    color: var(--sec-color);
+    transform: rotate(180deg);
+}
+.pop{
+    height: 100vh;
+    width: 400px;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    z-index: 5;
+    background-color: var(--prym-color);
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 15px 0px #030e1287;
+    transition: .5s ease-in-out;
+}
+.pop .close{
+    width: fit-content;
+    margin: 0 0 0 auto;
+    transition: all .5s ease-in-out;
+}
+.pop .close:hover{
+    transform: rotate(180deg);
+}
+.pop .close svg{
+    font-size: 30px !important;
+    color: var(--sec-color);
+    cursor: pointer;
+}
+.pop .pop-links{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+}
+.pop .pop-links li{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 455px) {
+    .pop{
+        width: 200px;
+        right: -200px;
+    }
+}
+@media screen and (min-width:767px) {
+    .pop{
+       right: -400px !important;
+    }
+}

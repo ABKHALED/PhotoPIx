@@ -1,0 +1,49 @@
+.vid{
+    padding-top: 100px;
+    min-height: 100vh;
+}
+.vid .vid__info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.vid .vid__info p{
+    margin: 0;
+    padding: 0;
+}
+.vid .vid__info a{
+    text-decoration: none;
+    color: var(--sec-color);
+    font-size: 19px;
+    transition: .5s;
+}
+.vid .vid__info a:hover{
+    color: var(--prym-color);
+}
+.vid .vid__info div{
+    color: var(--sec-color);
+    transition: .5s;
+    cursor: pointer;
+}
+.vid .vid__info div:hover{
+    color: var(--prym-color);
+}
+.vid .vid__holder{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+.vid .vid__holder video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
+

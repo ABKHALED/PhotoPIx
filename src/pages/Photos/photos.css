@@ -1,0 +1,77 @@
+.main{
+    margin-top: 100px;
+}
+.main input{
+    width: 500px;
+    margin: 0 auto 50px;
+}
+.hol{
+    width: 100%;
+    position: relative;
+    height: 300px;
+    cursor: pointer;
+}
+.hol:hover .icons{
+    opacity: 1;
+    z-index: 2;
+}
+.hol:hover  .content{
+    z-index: 2;
+    opacity: 1;
+}
+.hol img{
+    padding:0 10px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.icons{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    transition: .5s;
+}
+.icons.active{
+z-index: 10;
+opacity: 1;
+}
+.icons .haret svg{
+    font-size: 30px !important;
+    color: red !important;
+    cursor: pointer;
+}
+.icons.active .info{
+    display: none;
+}
+.icons .info svg{
+    font-size: 30px;
+}
+.content{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 0;
+    text-align: center;
+    color: var(--sec-color);
+    font-size: 15px;
+    font-weight: bold;
+    padding:0 20px;
+    opacity: 0;
+    transition: .5s;
+}
+.content h3{
+    margin: 0;
+    padding: 0;
+}

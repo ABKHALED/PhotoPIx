@@ -1,0 +1,53 @@
+.overlay{
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    display: grid;
+    place-items: center;
+}
+.overlay .left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    z-index: -1;
+}
+.overlay .right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    z-index: -1;
+}
+.loader{
+    position: relative;
+    z-index: 10000;
+}
+.overlay .top{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background-color: black;
+    z-index: -1;
+}
+.overlay .bootom{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background-color: black;
+    z-index: -1;
+}
+    /* "predeploy":"npm run build",
+    "deploy":"gh-pages -d build", */
+    /*  "homepage":"http://ABKHALED.github.io/Pixgraph", */

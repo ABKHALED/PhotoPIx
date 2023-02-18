@@ -1,0 +1,60 @@
+.photo{
+    padding-top: 100px;
+    height: 200vh;
+}
+@media screen and (max-width:767px){
+    .photo{
+        height: 100vh;
+    }
+    .photo .info{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+.photo .container{
+    height: 100%;
+}
+.photo .image{
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+.photo img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.photo .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    /* flex-wrap: wrap; */
+}
+.photo .info p{
+    margin: 0;
+    padding: 0;
+}
+.photo .info a{
+    text-decoration: none;
+    color: var(--sec-color);
+    font-size: 19px;
+    transition: .5s;
+}
+.photo .info a:hover{
+    color: var(--prym-color);
+}
+.photo .info div{
+    color: var(--sec-color);
+    transition: .5s;
+    cursor: pointer;
+}
+.photo .info div:hover{
+    color: var(--prym-color);
+}
