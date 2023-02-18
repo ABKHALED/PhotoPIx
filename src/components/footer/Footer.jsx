@@ -6,7 +6,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 function Footer() {
   return (
-    <footer className='  bg-light pt-5 text-center'>
+    <footer className=' mt-5 bg-light pt-5 text-center'>
       <div className="container">
         <div className="row">
             <div className="col-12 col-md-6 col-lg-4 mb-2 left">
